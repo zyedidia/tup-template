@@ -1,0 +1,6 @@
+import CC=gcc
+CFLAGS += -Wall
+CFLAGS += -O2
+
+: foreach *.c |> $(CC) $(CFLAGS) -c %f -o %o |> %B.o
+: *.o |> $(CC) %f -o %o |> hello

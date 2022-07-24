@@ -1,0 +1,4 @@
+*.o
+hello
+.tup
+compile_commands.json
